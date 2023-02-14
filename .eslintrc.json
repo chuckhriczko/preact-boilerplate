@@ -1,0 +1,75 @@
+{
+    "root": true,
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+        "import",
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "semi": 0,
+        "prefer-template": "off",
+        "no-var": 1,
+        "camelcase": 1,
+        "no-nested-ternary": 0,
+        "no-console": 1,
+        "no-template-curly-in-string": 1,
+        "no-self-compare": 1,
+        "import/prefer-default-export": 1,
+        "import/named": 1,
+        "import/no-unresolved": 0,
+        "import/no-extraneous-dependencies": ["off", { "devDependencies": false }],
+        "arrow-body-style": 1,
+        "no-case-declarations": 1,
+        "no-unused-vars": 1,
+        "react/prop-types": 1,
+        "react-hooks/rules-of-hooks": 1,
+        "react-hooks/exhaustive-deps": 1,
+        "react/button-has-type": 1,
+        "react/require-default-props": 1,
+        "react/no-array-index-key": 1,
+        "react/jsx-uses-react": 1,
+        "react/display-name": 1,
+        "react/no-danger-with-children": 1,
+        "react/jsx-no-bind": 1,
+        "react/no-unescaped-entities": 1,
+        "react/react-in-jsx-scope": 0,
+        "@typescript-eslint/no-non-null-assertion": 1,
+        "@typescript-eslint/no-empty-function": 1,
+        "@typescript-eslint/ban-types": 1,
+        "@typescript-eslint/no-explicit-any": 1,
+        "@typescript-eslint/no-unused-vars": 1,
+        "prefer-const": 1,
+        "no-empty-pattern": 1,
+        "no-useless-escape": 1
+        //"indent": ["error", 2],
+        //"linebreak-style": "CRLF",
+        //"quotes": ["warn", "single"]
+      },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
