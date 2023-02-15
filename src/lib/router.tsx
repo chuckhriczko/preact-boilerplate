@@ -6,6 +6,7 @@ import PageHome from "../pages/home";
 
 //Error Pages
 import Error404 from "../pages/errors/error404";
+import PageNotHome from '../pages/notHome';
 
 /**
  * Routes go here
@@ -13,6 +14,7 @@ import Error404 from "../pages/errors/error404";
 const AppRoutes = () => (
         <Switch>
             <Route path="/" component={PageHome} />
+            <Route path="/notHome" component={PageNotHome} />
 
             {/* 404 */}
             <Route path="/notfound" component={Error404} />
